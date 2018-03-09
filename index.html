@@ -108,11 +108,6 @@
                                     references
                                 </a>
                             </li>
-                            <li>
-                                <a class="mdl-navigation__link" data-scroll="" href="#contact_sec">
-                                    contact
-                                </a>
-                            </li>
                         </ul>
                         <!-- Right aligned menu below button -->
                         <button class="mdl-button mdl-js-button mdl-button--icon ver-more-btn" id="demo-menu-lower-right">
@@ -287,15 +282,6 @@
                                         </i>
                                         <span class="font-capitalize">
                                             references
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="mdl-navigation__link border-top-sep border-bottom-sep" data-scroll="" href="#contact_sec">
-                                        <i class="zmdi zmdi-email pr-15">
-                                        </i>
-                                        <span class="font-capitalize">
-                                            contact
                                         </span>
                                     </a>
                                 </li>
@@ -1360,71 +1346,6 @@
                             </div>
                         </section>
                         <!--/Price Sec-->
-                        <!--Contact Sec-->
-                        <section class="contact-sec sec-pad-top-sm" id="contact_sec">
-                            <h2 class="mb-35">
-                                contact
-                            </h2>
-                            <div class="row">
-                                <div class="col-sm-7 mb-30" id="form_card_height">
-                                    <div class="mdl-card mdl-shadow--2dp" data-ng-controller="ContactController">
-                                        <h4 class="mb-10 font-unsetcase">
-                                            Hey
-                                            <span data-ng-bind="formData.inputName||'There'">
-                                                There
-                                            </span>
-                                            , happy to hear from you.
-                                        </h4>
-                                        <form class=" form-horizontal mb-30" data-ng-submit="submit(contactform, $event)" method="post" name="contactform" role="form">
-                                            <div class="form-group" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                    <input autocomplete="off" class="mdl-textfield__input" data-ng-model="formData.inputName" id="inputName" name="inputName" required="" type="text">
-                                                        <label class="mdl-textfield__label" for="inputName">
-                                                            name*
-                                                        </label>
-                                                    </input>
-                                                </div>
-                                            </div>
-                                            <div class="form-group" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                    <input autocomplete="off" class="mdl-textfield__input" data-ng-model="formData.inputEmail" id="inputEmail" name="inputEmail" required="" type="email">
-                                                        <label class="mdl-textfield__label" for="inputEmail">
-                                                            email*
-                                                        </label>
-                                                    </input>
-                                                </div>
-                                            </div>
-                                            <div class="form-group" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                    <textarea class="mdl-textfield__input" data-ng-model="formData.inputMessage" id="inputMessage" name="inputMessage" required="" rows="3">
-                                                    </textarea>
-                                                    <label class="mdl-textfield__label" for="inputMessage">
-                                                        message*
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="align-center">
-                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-blue font-white" data-ng-disabled="submitButtonDisabled" type="submit">
-                                                        submit
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <p class="block result" data-ng-class="result">
-                                            {{ resultMessage }}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5 mb-30">
-                                    <div class="mdl-card mdl-shadow--2dp pa-0">
-                                        <div id="map_canvas">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!--/Contact Sec-->
                         <!--Footer Sec-->
                         <footer class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
                             <h4>
